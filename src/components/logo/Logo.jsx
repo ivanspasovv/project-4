@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Logo = ({ type = 'default' }) => {
+const Logo = ({ type }) => {
+  type = 'default';
   let url;
 
   if (type === 'default') {
