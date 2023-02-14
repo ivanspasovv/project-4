@@ -1,5 +1,5 @@
-import Logo from "../src/components/Logo/Logo";
+import Example from "../src/components/example/Example";
 
 export default function Index() {
-  return <Logo />;
+  return <Example />;
 }
