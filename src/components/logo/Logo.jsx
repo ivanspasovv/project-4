@@ -1,8 +1,6 @@
 import React from 'react';
 
-function Logo(props) {
-  const { type = 'default' } = props;
-
+function Logo({ type }) {
   const logoSrc = type === 'muted'
     ? '/images/logo-muted.svg'
     : '/images/logo.svg';
