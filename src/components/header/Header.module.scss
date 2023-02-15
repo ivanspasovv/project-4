@@ -1,5 +1,16 @@
 @use "../../styles/colors";
 
+.container {
+    max-width: 95% !important;
+    margin-top: 2rem;
+}
+
+.input {
+    background: colors.$background_paper !important;
+    width: 80%;
+    border-radius: 25px;
+}
+
 .btn:hover {
-    background: colors.$background_paper;
+    background: colors.$primary_main !important;
 }
