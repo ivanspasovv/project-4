@@ -1,12 +1,13 @@
 import React from 'react';
 
-export default function Logo(props) {
-  const { type = 'default' } = props;
-  const logoSrc = type === 'muted'
-    ? '/images/logo-muted.svg'
-    : '/images/logo.svg';
+export default function Logo ({ type = 'default' }) {
+  let url;
 
-  return (
-    <img src={logoSrc} alt="Logo" />
-  );
+  if (type === 'default') {
+    url = '/images/logo.svg';
+  } else if (type === 'muted') {
+    url = '/images/logo-muted.svg';
+  }
+
+  return <img src={url} alt="Company Logo" />;
 };
