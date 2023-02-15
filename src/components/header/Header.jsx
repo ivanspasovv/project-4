@@ -1,7 +1,6 @@
 import React from 'react';
 import Logo from '../logo/Logo';
-import { Search } from '@mui/icons-material';
-import { Grid, InputBase, Button, Container, InputAdornment, TextField } from '@mui/material';
+import { Grid, Button, Container, InputAdornment, TextField } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import styles from "./Header.module.scss";
 
@@ -15,11 +14,6 @@ const Header = () => {
           </Grid>
           <Grid item xs={6}>
             <div>
-              {/* <Search className={styles.search}/>
-              <InputBase
-                className={styles.input}
-                placeholder="Find items, users and activities"
-              /> */}
                 <TextField
                     className={styles.input}
                     placeholder="Find items, users and activities"
