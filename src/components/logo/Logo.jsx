@@ -7,7 +7,7 @@ function Logo(props) {
     : '/images/logo.svg';
 
   return (
-    <img src={logoSrc} alt="Logo" />
+    <img type={"default"} src={logoSrc} alt="Logo" />
   );
 }
 
