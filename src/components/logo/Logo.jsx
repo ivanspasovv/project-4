@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Logo(props) {
+export default function Logo(props) {
   const { type = 'default' } = props;
   const logoSrc = type === 'muted'
     ? '/images/logo-muted.svg'
@@ -9,6 +9,4 @@ function Logo(props) {
   return (
     <img src={logoSrc} alt="Logo" />
   );
-}
-
-export default Logo;
+};
