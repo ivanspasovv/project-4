@@ -1,0 +1,5 @@
+@use "../../styles/colors";
+
+.btn:hover {
+    background: colors.$background_paper;
+}
