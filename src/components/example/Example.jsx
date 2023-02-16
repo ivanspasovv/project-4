@@ -5,7 +5,6 @@ import styles from "./Example.module.scss";
 import classNames from "classnames";
 import Header from "../header/Header";
 import User from "../user/User";
-import Avatar from '../avatar/Avatar';
 
 export default function Copyright() {
   return (

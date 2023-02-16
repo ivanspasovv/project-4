@@ -2,13 +2,13 @@ import React from 'react';
 import styles from './User.module.scss';
 import Avatar from '../avatar/Avatar';
 
-const User = ({
-  name = 'fgfghfghb',
-  info = 'ghhgfh',
+export default function User ({
+  name = '',
+  info = '',
   avatar = '',
   size = 55,
   verified = false,
-}) => {
+}) {
   return (
     <div className={styles.user}>
     <Avatar verified/>
@@ -19,5 +19,3 @@ const User = ({
     </div>
   );
 };
-
-export default User;
