@@ -4,13 +4,13 @@ import Link from "../link/Link";
 import styles from "./Example.module.scss";
 import classNames from "classnames";
 import Header from "../header/Header";
-import User from "../user/User";
+import Card from "../card/Card";
 
 export default function Copyright() {
   return (
     <div>
       <Header />
-      <User />
+      <Card />
     </div>
   
   );
