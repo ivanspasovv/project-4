@@ -5,10 +5,14 @@ import styles from "./Example.module.scss";
 import classNames from "classnames";
 import Logo from "../logo/Logo";
 import Header from "../header/Header";
+import Avatar from '../avatar/Avatar';
 
 export default function Copyright() {
   return (
-    <Header />
-    
+    <div>
+      <Header />
+      <Avatar url="/images/avatar.png" verified />
+    </div>
+  
   );
 }
