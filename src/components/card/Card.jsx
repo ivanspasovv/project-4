@@ -22,7 +22,7 @@ export default function Card ({ name, likes, mediaUrl, user, price, currency }) 
   return (
     <CardMUI className={styles.card}>
       <CardContent>
-        <Avatar url={user.avatar.url} verified className={styles.avatar}/>
+        <Avatar url={user.avatar.url} verified className={styles.avatar} />
         <div>
           <img 
             className={styles.media}

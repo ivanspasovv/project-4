@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Avatar.module.scss';
 
-export default function Avatar ({ size = 90, url, verified = false }) {
+export default function Avatar ({ size = 50, url, verified = false }) {
     const badge = verified ? (
           <img className={styles.badge} src="/images/verified.svg" alt="Verified" />
       ) : null;
