@@ -7,7 +7,7 @@ import styles from "./Card.module.scss";
 
 export default function CardComponent ({ 
   name = "Clock",
-  likes = 6849849,
+  likes = 0,
   mediaUrl = "/images/nft.jpg",
   price = "~12.2",
   currency = "ETH",
@@ -19,7 +19,6 @@ export default function CardComponent ({
     }, 
   }) 
 {
-  const formattedNumber = millify(likes);
   return (
 
     <Card className={styles.card}>
@@ -42,7 +41,7 @@ export default function CardComponent ({
           </div>
           <div>
             <Chip 
-              label={formattedNumber} 
+              label={millify(likes)} 
               color="success" 
               icon={<FavoriteIcon className={styles.favoriteIcon}/>}
               className={styles.likes} 
