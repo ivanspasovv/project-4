@@ -7,7 +7,7 @@ import styles from "./Card.module.scss";
 
 export default function Card ({ name, likes, mediaUrl, user, price, currency }) {
     name = "Name";
-    likes = 1100;
+    likes = 0;
     mediaUrl = "/images/nft.jpg";
     price = "~12.2";
     currency = "ETH";
@@ -18,7 +18,6 @@ export default function Card ({ name, likes, mediaUrl, user, price, currency }) 
         verified: true
     };
     
-
   return (
     <CardMUI className={styles.card}>
         <Avatar url={user.avatar.url} verified className={styles.avatar}/>
