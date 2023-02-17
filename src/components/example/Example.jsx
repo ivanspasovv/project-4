@@ -10,7 +10,7 @@ export default function Copyright() {
   return (
     <div>
       <Header />
-      {/* <Card /> */}
+      <Card />
     </div>
   
   );
