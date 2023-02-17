@@ -1,12 +1,11 @@
 import React from 'react';
-import { Card as CardMUI, CardContent, Chip } from '@mui/material';
+import { Card, CardContent, Chip } from '@mui/material';
 import millify from 'millify';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Avatar from "../avatar/Avatar";
 import styles from "./Card.module.scss";
 
-
-export default function Card ({ name, likes, mediaUrl, user, price, currency }) {
+export default function CardComponent ({ name, likes, mediaUrl, user, price, currency }) {
     name = "Clock";
     likes = 0;
     mediaUrl = "/images/nft.jpg";
@@ -20,9 +19,9 @@ export default function Card ({ name, likes, mediaUrl, user, price, currency }) 
     };
     
   return (
-    <CardMUI className={styles.card}>
+    <Card className={styles.card}>
       <CardContent>
-        <Avatar url={user.avatar.url} verified className={styles.avatar} />
+        <Avatar url={user.avatar.url} className={styles.avatar} />
         <div>
           <img 
             className={styles.media}
@@ -48,7 +47,7 @@ export default function Card ({ name, likes, mediaUrl, user, price, currency }) 
           </div>
         </div>
       </CardContent>
-    </CardMUI >
+    </Card >
   );
 };
 
