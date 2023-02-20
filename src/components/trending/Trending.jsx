@@ -4,7 +4,7 @@ import Card from "../card/Card";
 import Select from "@mui/material/Select";
 import styles from "./Trending.module.scss";
 
-function Trending ({ 
+export default function Trending ({ 
     cards = [
     {
        name:"Ivy",
@@ -87,5 +87,3 @@ function Trending ({
     </Container>
   );
 };
-
-export default Trending;
