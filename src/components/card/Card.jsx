@@ -6,16 +6,16 @@ import Avatar from "../avatar/Avatar";
 import styles from "./Card.module.scss";
 
 export default function CardComponent ({ 
-  name = "Clock",
+  name = "",
   likes = 0,
-  mediaUrl = "/images/nft.jpg",
-  price = "~12.2",
-  currency = "ETH",
+  mediaUrl = "",
+  price = "",
+  currency = "",
   user = {
     avatar:{
-        url:"/images/avatar.png"
+        url:""
     },
-        verified: true
+        verified: false
     }, 
   }) 
 {

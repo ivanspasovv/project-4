@@ -3,13 +3,13 @@ import Container from "@mui/material/Container";
 import Link from "../link/Link";
 import styles from "./Example.module.scss";
 import classNames from "classnames";
-import Header from "../header/Header";
+import Trending from "../trending/Trending";
 import Card from "../card/Card";
 
 export default function Copyright() {
   return (
     <div>
-      <Card />
+      <Trending />
     </div>
   
   );
