@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Container, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import Card from "../card/Card";
 import Select from "@mui/material/Select";
 import styles from "./Trending.module.scss";
+import Container from "@mui/material/Container";
 
 export default function Trending ({ cards = [] }) {
   const [sortBy, setSortBy] = useState("price");
