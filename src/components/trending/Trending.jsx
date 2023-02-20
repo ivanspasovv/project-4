@@ -15,6 +15,7 @@ export default function Trending ({ cards = [] }) {
   const sortedCards = [...cards].sort((a, b) => a[sortBy] - b[sortBy]);
 
   return (
+    <div>
     <Container sx={{ mt: 1 }}>
         <div className={styles.title}>
             <Typography variant="h2" >
@@ -34,5 +35,6 @@ export default function Trending ({ cards = [] }) {
         ))}
       </Grid>
     </Container>
+    </div>
   );
 };
