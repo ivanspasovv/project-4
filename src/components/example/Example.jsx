@@ -9,8 +9,7 @@ import Card from "../card/Card";
 export default function Copyright() {
   return (
     <div>
-      <Trending />
-      <Container />
+      <Card />
     </div>
   
   );

@@ -31,3 +31,13 @@
 .likes {
     text-transform: lowercase;
 }
+
+.badge {
+    background-color: colors.$success_main;
+    color: colors.$background_default;
+    border-radius: 10%;
+    font-weight: bold;
+    padding: 0.5rem;
+    width: 35%;
+    display: flex;
+}
