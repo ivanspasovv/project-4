@@ -10,6 +10,7 @@ export default function Copyright() {
   return (
     <div>
       <Trending />
+      <Container />
     </div>
   
   );
