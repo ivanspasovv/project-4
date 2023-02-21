@@ -5,60 +5,7 @@ import Select from "@mui/material/Select";
 import styles from "./Auctions.module.scss";
 import Container from "@mui/material/Container";
 
-export default function Auctions ({ 
-
-    cards = [
-        {
-            "name": "Clock",
-            "user": {
-                "avatar": {
-                    "url": "images/avatar.png"
-                },
-                "verified": true
-            },
-            "mediaUrl": "images/nft.jpg",
-            "price": 1,
-            "currency": "ETH"
-        },
-        {
-           "name":"DOGE",
-           "user":{
-              "avatar":{
-                 "url":"images/avatar.png"
-              },
-              "verified":true
-           },
-           "mediaUrl":"images/nft.jpg",
-           "price":2.3,
-           "currency":"ETH"
-        },
-        {
-           "name":"BTC",
-           "user":{
-              "avatar":{
-                 "url":"images/avatar.png"
-              },
-              "verified":true
-           },
-           "mediaUrl":"images/nft.jpg",
-           "price":5,
-           "currency":"ETH"
-        },
-        {
-           "name":"Litecoin",
-           "user":{
-              "avatar":{
-                 "url":"images/avatar.png"
-              },
-              "verified":true
-           },
-           "mediaUrl":"images/nft.jpg",
-           "price":10,
-           "currency":"ETH"
-        }
-     ]
-
-}) {
+export default function Auctions ({ cards = []}) {
   const [sortBy, setSortBy] = useState("price");
 
   const handleSortChange = (event) => {
@@ -80,7 +27,7 @@ export default function Auctions ({
         </Select>
         </div>
       
-      <Grid container spacing={4}>
+      <Grid container >
         {sortedCards.map((card) => (
           <Grid item xs={12} sm={6} md={3}>
             <Card {...card} />
