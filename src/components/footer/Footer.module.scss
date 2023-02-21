@@ -3,6 +3,16 @@
 .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: colors.$background_default;
+}
+
+.text {
+    color: colors.$text_disabled;
+}
+
+.buttons {
+    font-weight: 400 !important;
+    text-transform: none !important;
+    font-size: 0.5rem !important;
 }
