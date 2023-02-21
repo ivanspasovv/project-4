@@ -5,7 +5,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import Avatar from "../avatar/Avatar";
 import CircleIcon from '@mui/icons-material/Circle';
 import styles from "./Card.module.scss";
-import Countdown from 'react-countdown';
+import Countdown, {zeroPad} from 'react-countdown';
 
 export default function CardComponent ({ 
   name = "Clock",
@@ -13,7 +13,7 @@ export default function CardComponent ({
   mediaUrl = "/images/nft.jpg",
   price = "~12.2",
   currency = "ETH",
-  timeLeft = 0 ,
+  timeLeft = 6546460 ,
   user = {
     avatar:{
         url:"/images/avatar.png"
@@ -31,15 +31,21 @@ export default function CardComponent ({
     }
   }, [timeLeft]);
 
+  const renderer = ({ hours, minutes, seconds }) => (
+    <p className={styles.countdown}>
+      {zeroPad(hours)}:{zeroPad(minutes)}:{zeroPad(seconds)}
+    </p>
+  );
+
   return (
 
     <Card className={styles.card}>
       <CardContent>
         <Avatar url={user.avatar.url} verified={user.verified} className={styles.avatar} />
-        <div>
+        <div className={styles.live}>
           {isLive && (
           <div className={styles.badge}>
-            <CircleIcon />
+            <CircleIcon fontSize='string'/>
             <span  style={{ marginLeft: '0.5rem' }}>
               Live
             </span>
@@ -49,6 +55,9 @@ export default function CardComponent ({
             className={styles.media}
             src={mediaUrl}
           />
+          {isLive && timeLeft > 0 ? (
+            <Countdown date={Date.now() + timeLeft} renderer={renderer}/>
+            ) : null}
         </div>
         <div className={styles.info}>
           <div>
@@ -68,9 +77,6 @@ export default function CardComponent ({
               variant="outlined"/>
           </div>
         </div>
-        {isLive && timeLeft > 0 ? (
-          <Countdown timeLeft={timeLeft} />
-        ) : null}
       </CardContent>
     </Card >
   );
