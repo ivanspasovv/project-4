@@ -9,7 +9,7 @@ import Header from "../header/Header";
 export default function Copyright() {
   return (
     <div>
-      <Footer />
+      <Header />
     </div>
   
   );
