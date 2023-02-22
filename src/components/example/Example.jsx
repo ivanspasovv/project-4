@@ -4,12 +4,12 @@ import Link from "../link/Link";
 import styles from "./Example.module.scss";
 import classNames from "classnames";
 import Footer from "../footer/Footer";
-import Auctions from "../auctions/Auctions";
+import Header from "../header/Header";
 
 export default function Copyright() {
   return (
     <div>
-      <Auctions />
+      <Footer />
     </div>
   
   );
