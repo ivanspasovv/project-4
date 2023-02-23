@@ -7,15 +7,15 @@ export default function Footer() {
     return (
             <Container>
                 <Grid container justifyContent="space-between" alignItems="center">
-                    <Grid item >
+                    <Grid item xs={12} sm={2}>
                         <Logo type="muted" />
                     </Grid>
-                    <Grid item className={styles.text}>
+                    <Grid item xs={12} sm={4} className={styles.text}>
                         <p>
                             Some text describing the purpose of the footer
                         </p>
                     </Grid>
-                    <Grid item >
+                    <Grid item xs={12} sm={4} >
                         <Button color="inherit" href="/privacy-policy" className={styles.buttons}>
                             Privacy Policy
                         </Button>
