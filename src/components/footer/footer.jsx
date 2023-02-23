@@ -5,7 +5,6 @@ import Grid from "@mui/material/Grid";
 
 export default function Footer() {
     return (
-        <div>
             <Container>
                 <Grid container justifyContent="space-between" alignItems="center">
                     <Grid item >
@@ -26,6 +25,5 @@ export default function Footer() {
                     </Grid>
                 </Grid>
             </Container>
-        </div>
     );
 };
