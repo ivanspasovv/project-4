@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Button } from '@mui/material';
 import Logo from '../logo/Logo';
 import styles from "./Footer.module.scss";
@@ -8,14 +7,14 @@ export default function Footer() {
     return (
         <div>
             <Container>
-                <Grid container className={styles.container}>
+                <Grid container justifyContent="space-between" alignItems="center">
                     <Grid item >
                         <Logo type="muted" />
                     </Grid>
                     <Grid item className={styles.text}>
-                        <span>
+                        <p>
                             Some text describing the purpose of the footer
-                        </span>
+                        </p>
                     </Grid>
                     <Grid item >
                         <Button color="inherit" href="/privacy-policy" className={styles.buttons}>
