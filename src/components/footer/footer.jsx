@@ -1,11 +1,11 @@
 import { Container, Button, Grid } from '@mui/material';
-import Logo from '../logo/Logo';
 import styles from "./Footer.module.scss";
+import Logo from '../logo/Logo';
 
 export default function Footer() {
     return (
             <Container maxWidth="lg" >
-                <Grid container justifyContent="space-between" alignItems="center">
+                <Grid container spacing={0} justifyContent="space-between" alignItems="center">
                     <Grid item xs={12} sm={2}>
                         <Logo type="muted" />
                     </Grid>
