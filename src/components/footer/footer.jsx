@@ -1,7 +1,8 @@
 import React from 'react';
-import { Grid, Container, Button } from '@mui/material';
+import { Container, Button } from '@mui/material';
 import Logo from '../logo/Logo';
 import styles from "./Footer.module.scss";
+import Grid from "@mui/material/Grid";
 
 export default function Footer() {
     return (
@@ -27,6 +28,5 @@ export default function Footer() {
                 </Grid>
             </Container>
         </div>
-
     );
 };
