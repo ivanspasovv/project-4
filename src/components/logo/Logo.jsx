@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Logo ({ type = 'default' }) {
   let url;
 
