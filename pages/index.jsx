@@ -1,6 +1,5 @@
-
-import Footer from "../src/components/footer/Footer";
+import Example from "../src/components/example/Example";
 
 export default function Index() {
-  return <Footer />;
+  return <Example />;
 }
