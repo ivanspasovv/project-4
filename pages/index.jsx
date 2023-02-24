@@ -1,4 +1,4 @@
-import Example from "../src/components/example/Example";
+
 import Footer from "../src/components/footer/Footer";
 
 export default function Index() {
