@@ -4,22 +4,21 @@
   "private": true,
   "dependencies": {
     "@emotion/cache": "11.4.0",
-    "@emotion/react": "^11.10.6",
+    "@emotion/react": "11.4.1",
     "@emotion/server": "11.4.0",
-    "@emotion/styled": "^11.10.6",
-    "@mui/icons-material": "^5.11.9",
+    "@emotion/styled": "11.3.0",
+    "@mui/icons-material": "^5.11.0",
     "@mui/lab": "*",
-    "@mui/material": "^5.11.10",
-    "@mui/styles": "^5.11.9",
+    "@mui/material": "5.0.3",
     "classnames": "^2.2.6",
     "clsx": "^1.1.1",
     "millify": "^5.0.1",
-    "next": "^12.1.2",
+    "next": "11.1.2",
     "prop-types": "15.7.2",
-    "react": "^17.0.2",
+    "react": "17.0.2",
     "react-countdown": "^2.3.5",
-    "react-dom": "^17.0.2",
-    "sass": "^1.42.1"
+    "react-dom": "17.0.2",
+    "sass": "^1.58.0"
   },
   "scripts": {
     "dev": "next",
@@ -27,10 +26,5 @@
     "start-server": "next start",
     "start": "next -p 8080",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
-  },
-  "devDependencies": {
-    "@types/react": "^17.0.2",
-    "@types/react-dom": "^17.0.2",
-    "webpack": "^5.75.0"
   }
 }
