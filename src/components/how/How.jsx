@@ -1,8 +1,5 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material";
-import Button from '@mui/material/Button';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
+import { Grid, Button } from "@mui/material";
 import styles from "./How.module.scss";
 
 export default function How (title, description, items = [], link) {
@@ -32,21 +29,6 @@ export default function How (title, description, items = [], link) {
                         </Button>
                     </p>
                 </Grid>
-                {/* <Grid item xs={12}>
-                    {items.map((item, index) => (
-                        <Step key={index}>
-                            <StepLabel StepIconProps={{ style: { opacity: "0.1" } }}>
-                                <Typography variant="h6" component="span" color="textSecondary">
-                                    {item.number}
-                                </Typography>
-                                <Typography variant="subtitle1" component="span">
-                                    {item.title}
-                                </Typography>
-                            </StepLabel>
-                            <Typography variant="body1">{item.description}</Typography>
-                        </Step>
-                    ))}
-                </Grid> */}
             </Grid>
         </div>
     );
