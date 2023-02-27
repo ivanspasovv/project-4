@@ -1,0 +1,19 @@
+@use "../../styles/colors";
+
+.body {
+    background-color: colors.$primary_main;
+    height: 84vh;
+    margin: 8vh 0;
+}
+
+.container {
+   
+}
+
+.info {
+}
+
+.btn {
+    background-color: colors.$text_primary !important;
+    color: colors.$primary_main !important;
+}

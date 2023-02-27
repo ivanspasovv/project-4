@@ -1,11 +1,11 @@
 import Link from "../link/Link";
 import styles from "./Example.module.scss";
-import Footer from "../footer/Footer";
+import Step from "../how/Step";
 
 export default function Copyright() {
   return (
     <div>
-      <Footer />
+      <Step />
     </div>
   );
 }
