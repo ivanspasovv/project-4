@@ -8,8 +8,8 @@ export default function InfoCardSteps({ items }) {
       {items.map(({ number, title, description }) => (
         <Step key={number}>
           <Grid container spacing={2}>
-            <Grid item xs={2} className={styles.number}>
-              <div>{number}</div>
+            <Grid item xs={2} >
+              <div className={styles.number}>{number}</div>
             </Grid>
             <Grid item xs={10}>
               <div>

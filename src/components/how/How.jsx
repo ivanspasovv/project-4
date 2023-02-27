@@ -1,6 +1,8 @@
 import React from "react";
 import { Grid, Button } from "@mui/material";
 import styles from "./How.module.scss";
+import InfoCardSteps from "../how/Step";
+import { Stepper } from "@mui/material";
 
 export default function How (title, description, items = [], link) {
 
@@ -8,9 +10,17 @@ export default function How (title, description, items = [], link) {
     title = "HOW IT WORKS";
     items = [
         {
-           "title":"Title",
+           "title":"Title 1",
            "description":"rgrthrerthrfgdfgdflsdfldfnglkdfgnjsdflkgdfjlkgrytytj"
-        }
+        },
+        {
+            "title":"Title 2",
+            "description":"rgrthrerthrfgdfgdflsdfldfnglkdfgnjsdflkgdfjlkgrytytj"
+         },
+         {
+            "title":"Title 3",
+            "description":"rgrthrerthrfgdfgdflsdfldfnglkdfgnjsdflkgdfjlkgrytytj"
+         },
      ],
     link = "https://google.com"
     return (
@@ -29,6 +39,11 @@ export default function How (title, description, items = [], link) {
                         </Button>
                     </p>
                 </Grid>
+            </Grid>
+            <Grid>
+                <Stepper>
+                    <InfoCardSteps items={items} />
+                </Stepper>
             </Grid>
         </div>
     );
