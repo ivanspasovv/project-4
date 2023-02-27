@@ -9,15 +9,15 @@ export default function How (title, description, items = [], link) {
     description = "rgrthrerthrfgdfgdflsdfldfnglkdfgnjsdflkgdfjlkgrytytj";
     title = "HOW IT WORKS";
     items = [
-        {
+        {  "number":"1",
            "title":"Title 1",
            "description":"rgrthrerthrfgdfgdflsdfldfnglkdfgnjsdflkgdfjlkgrytytj"
         },
-        {
+        {   "number":"2",
             "title":"Title 2",
             "description":"rgrthrerthrfgdfgdflsdfldfnglkdfgnjsdflkgdfjlkgrytytj"
          },
-         {
+         {  "number":"3",
             "title":"Title 3",
             "description":"rgrthrerthrfgdfgdflsdfldfnglkdfgnjsdflkgdfjlkgrytytj"
          },
