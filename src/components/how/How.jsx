@@ -2,31 +2,30 @@ import React from "react";
 import { Grid, Button } from "@mui/material";
 import styles from "./How.module.scss";
 import InfoCardSteps from "../how/Step";
-import { Stepper } from "@mui/material";
 
 export default function How ({title = "", description = "", items = [], link = ""}) {
 
-    description = "rgrthrerthrfgdfgdflsdfldfnglkdfgnjsdflkgdfjlkgrytytj";
+    description = "rgrthrerthrfgdfgdflsdfldfnglkdfgnjsdflkgdfjlkgrytytjrthrththhefgfgf";
     title = "HOW IT WORKS";
     items = [
         {  "number":"1",
            "title":"Title 1",
-           "description":"rgrthrerthrfgdfgdflsdfldfnglkdfgnjsdflkgdfjlkgrytytj"
+           "description":"rgrthrerthrfgdfgdflsdfldfnglkdfgnjsfghfghfgfghfgdgdfgdfgdfggdfgdfgdfgdflkgdfjlkgrytytj"
         },
         {   "number":"2",
             "title":"Title 2",
-            "description":"rgrthrerthrfgdfgdflsdfldfnglkdfgnjsdflkgdfjlkgrytytj"
+            "description":"rgrthrerthrfgdfgdflsdfldfnglkdfgnjsfghfghfgfghfgdgdfgdfgdfggdfgdfgdfgdflkgdfjlkgrytytj"
          },
          {  "number":"3",
             "title":"Title 3",
-            "description":"rgrthrerthrfgdfgdflsdfldfnglkdfgnjsdflkgdfjlkgrytytj"
+            "description":"rgrthrerthrfgdfgdflsdfldfnglkdfgnjsfghfghfgfghfgdgdfgdfgdfggdfgdfgdfgdflkgdfjlkgrytytj"
          },
      ],
     link = "https://google.com"
     return (
-        <div className={styles.body}>
-            <Grid container className={styles.container}>
-                <Grid item xs={12} className={styles.info}>
+        <div className={styles.container}>
+            <Grid container className={styles.how}>
+                <Grid item xs={9} className={styles.info}>
                     <h1>
                         {title}
                     </h1>
@@ -39,11 +38,9 @@ export default function How ({title = "", description = "", items = [], link = "
                         </Button>
                     </p>
                 </Grid>
-            </Grid>
-            <Grid>
-                <Stepper>
-                    <InfoCardSteps items={items} />
-                </Stepper>
+                <Grid item xs={3} >
+                    <InfoCardSteps items={items} className={styles.infoCard}/>
+                </Grid>
             </Grid>
         </div>
     );

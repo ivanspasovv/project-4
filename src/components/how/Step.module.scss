@@ -1,5 +1,20 @@
 @use "../../styles/colors";
 
+.infoCard {
+    background-color: colors.$background_paper;
+    margin: 3rem 0;
+    border-radius: 1.8rem;
+    box-sizing: border-box;
+}
+
 .number {
     background-color: rgba(colors.$primary_main, 10%);
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 700;
 }
