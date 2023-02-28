@@ -1,14 +1,15 @@
+@use "../../styles/colors";
+
 .container {
-    padding: 16px;
-    border-radius: 4px;
+    padding: 10px;
     display: flex;
     align-items: center;
   }
   
   .light {
-    background-color: #f6f6f6;
+    background-color: rgba(colors.$primary_main, 10%);
   }
   
   .dark {
-    background-color: #e0e0e0;
+    background-color: rgba(colors.$primary_main, 20%);
   }
