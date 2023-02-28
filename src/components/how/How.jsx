@@ -4,7 +4,7 @@ import styles from "./How.module.scss";
 import InfoCardSteps from "../how/Step";
 import { Stepper } from "@mui/material";
 
-export default function How (title, description, items = [], link) {
+export default function How ({title = "", description = "", items = [], link = ""}) {
 
     description = "rgrthrerthrfgdfgdflsdfldfnglkdfgnjsdflkgdfjlkgrytytj";
     title = "HOW IT WORKS";
