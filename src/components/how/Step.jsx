@@ -9,7 +9,7 @@ export default function InfoCardSteps({ items = [] }) {
         <Step key={number}>
           <Grid container spacing={2}>
             <Grid item xs={2}>
-              <div className={styles.number} style={{ opacity: "10%" }}>{number}</div>
+              <div className={styles.number} >{number}</div>
             </Grid>
             <Grid item xs={10}>
               <div>
