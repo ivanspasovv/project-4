@@ -7,10 +7,14 @@ export default function Collector ({
     avatar = '',
     verified = false,
     type, 
-    nftsCount = 0 }) {
+    nftsCount = 0,
+    id = 0,
+   }) {
+
   return (
     <div className={`${styles.container} ${type === "light" ? styles.light : styles.dark}`}>
-      <User name={name} avatar={avatar} verified={verified} info={nftsCount + " items"}/>
+      <div className={styles.id}>{id}</div>
+      <User name={name} avatar={avatar} verified={verified} info={nftsCount + " items"} />
     </div>
   );
 };
