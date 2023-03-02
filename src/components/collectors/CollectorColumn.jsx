@@ -5,9 +5,9 @@ import styles from "./CollectorColumn.module.scss";
 export default function CollectorColumn ({ items = [ ] }) {   
 
   return (
-    <div className={styles.collectorColumn}>
+    <div className={styles.collectorColumn} >
       {items.map((item, index) => (
-        <Collector
+        <Collector 
           id={item.id}
           type={index % 2 === 0 ? "light" : "dark"}
           name={item.name}

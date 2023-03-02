@@ -9,7 +9,31 @@ export default function TopCollectors ({ collectors = [
 
     {
         name: "Name",
-        nftsCount: 7584247,
+        nftsCount: 7587,
+        avatar: "images/avatar.png",
+        verified: false,
+      },
+    {
+        name: "Name",
+        nftsCount: 444,
+        avatar: "images/avatar.png",
+        verified: true,
+      },
+      {
+        name: "Name",
+        nftsCount: 787,
+        avatar: "images/avatar.png",
+        verified: false,
+      },
+    {
+        name: "Name",
+        nftsCount: 4514,
+        avatar: "images/avatar.png",
+        verified: true,
+      },
+      {
+        name: "Name",
+        nftsCount: 747,
         avatar: "images/avatar.png",
         verified: false,
       },
@@ -21,55 +45,31 @@ export default function TopCollectors ({ collectors = [
       },
       {
         name: "Name",
-        nftsCount: 754287,
+        nftsCount: 7587,
         avatar: "images/avatar.png",
         verified: false,
       },
     {
         name: "Name",
-        nftsCount: 45214,
+        nftsCount: 4514,
         avatar: "images/avatar.png",
         verified: true,
       },
       {
         name: "Name",
-        nftsCount: 7584247,
+        nftsCount: 247,
         avatar: "images/avatar.png",
         verified: false,
       },
     {
         name: "Name",
-        nftsCount: 44254,
+        nftsCount: 254,
         avatar: "images/avatar.png",
         verified: true,
       },
       {
         name: "Name",
-        nftsCount: 754287,
-        avatar: "images/avatar.png",
-        verified: false,
-      },
-    {
-        name: "Name",
-        nftsCount: 45214,
-        avatar: "images/avatar.png",
-        verified: true,
-      },
-      {
-        name: "Name",
-        nftsCount: 7584247,
-        avatar: "images/avatar.png",
-        verified: false,
-      },
-    {
-        name: "Name",
-        nftsCount: 44254,
-        avatar: "images/avatar.png",
-        verified: true,
-      },
-      {
-        name: "Name",
-        nftsCount: 754287,
+        nftsCount: 7587,
         avatar: "images/avatar.png",
         verified: false,
       },
@@ -100,7 +100,7 @@ export default function TopCollectors ({ collectors = [
 
   return (
     <div>
-          <Container style={{margin : 0}} >
+          <Container className={styles.dfgdfg}>
               <div className={styles.title}>
                   <Typography variant="h2" >
                       TopCollectors
@@ -111,9 +111,9 @@ export default function TopCollectors ({ collectors = [
                   </Select>
               </div>
 
-              <Grid container >
+              <Grid container>
               {collectorChunks.map((chunk, index) => (
-                <Grid item xs={12} sm={6} md={3} key={index}>
+                <Grid item xs={12} sm={6} md={3} key={index} className={styles.collectorContainer}>
                     <CollectorColumn items={chunk} />
                 </Grid>
                 ))}
