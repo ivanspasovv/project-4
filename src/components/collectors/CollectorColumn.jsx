@@ -2,36 +2,7 @@ import React from "react";
 import Collector from "./Collector";
 import styles from "./CollectorColumn.module.scss";
 
-export default function CollectorColumn ({ items = [
-    {
-        name: "Name",
-        nftsCount: 14,
-        avatar: "/images/avatar.png",
-        verified: true,
-        id: 1,
-    },
-    {
-        name: "Name",
-        nftsCount: 14,
-        avatar: "/images/avatar.png",
-        verified: false,
-        id: 2,
-    },
-    {
-        name: "Name",
-        nftsCount: 14,
-        avatar: "/images/avatar.png",
-        verified: true,
-        id: 1,
-    },
-    {
-        name: "Name",
-        nftsCount: 14,
-        avatar: "/images/avatar.png",
-        verified: false,
-        id: 5,
-    },
-  ] }) {   
+export default function CollectorColumn ({ items = [ ] }) {   
 
   return (
     <div className={styles.collectorColumn}>

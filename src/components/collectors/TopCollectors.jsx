@@ -1,10 +1,86 @@
 import { Grid, Container, Typography } from "@mui/material";
 import CollectorColumn from "./CollectorColumn";
 import { useState } from "react";
+import _ from 'lodash';
 import Select from "@mui/material/Select";
 import styles from "./TopCollectors.module.scss";
 
-export default function TopCollectors ({ collectors = [] }) {
+export default function TopCollectors ({ collectors = [
+
+    {
+        name: "Name",
+        nftsCount: 7584247,
+        avatar: "images/avatar.png",
+        verified: false,
+      },
+    {
+        name: "Name",
+        nftsCount: 44254,
+        avatar: "images/avatar.png",
+        verified: true,
+      },
+      {
+        name: "Name",
+        nftsCount: 754287,
+        avatar: "images/avatar.png",
+        verified: false,
+      },
+    {
+        name: "Name",
+        nftsCount: 45214,
+        avatar: "images/avatar.png",
+        verified: true,
+      },
+      {
+        name: "Name",
+        nftsCount: 7584247,
+        avatar: "images/avatar.png",
+        verified: false,
+      },
+    {
+        name: "Name",
+        nftsCount: 44254,
+        avatar: "images/avatar.png",
+        verified: true,
+      },
+      {
+        name: "Name",
+        nftsCount: 754287,
+        avatar: "images/avatar.png",
+        verified: false,
+      },
+    {
+        name: "Name",
+        nftsCount: 45214,
+        avatar: "images/avatar.png",
+        verified: true,
+      },
+      {
+        name: "Name",
+        nftsCount: 7584247,
+        avatar: "images/avatar.png",
+        verified: false,
+      },
+    {
+        name: "Name",
+        nftsCount: 44254,
+        avatar: "images/avatar.png",
+        verified: true,
+      },
+      {
+        name: "Name",
+        nftsCount: 754287,
+        avatar: "images/avatar.png",
+        verified: false,
+      },
+    {
+        name: "Name",
+        nftsCount: 45214,
+        avatar: "images/avatar.png",
+        verified: true,
+      },
+
+] }) {
 
     const [sortBy, setSortBy] = useState("price");
 
@@ -14,9 +90,17 @@ export default function TopCollectors ({ collectors = [] }) {
 
     const sortedCards = [...collectors].sort((a, b) => a[sortBy] - b[sortBy]);
 
+    const collectorsWithId = collectors.map((collector, index) => ({
+        ...collector,
+        id: index + 1,
+      }));
+    
+      // Split collectors into chunks of 3
+      const collectorChunks = _.chunk(collectorsWithId, 3);
+
   return (
     <div>
-          <Container sx={{ mt: 1 }}>
+          <Container style={{margin : 0}} >
               <div className={styles.title}>
                   <Typography variant="h2" >
                       TopCollectors
@@ -27,8 +111,12 @@ export default function TopCollectors ({ collectors = [] }) {
                   </Select>
               </div>
 
-              <Grid container spacing={4}>
-                  <CollectorColumn />
+              <Grid container >
+              {collectorChunks.map((chunk, index) => (
+                <Grid item xs={12} sm={6} md={3} key={index}>
+                    <CollectorColumn items={chunk} />
+                </Grid>
+                ))}
               </Grid>
           </Container>
       </div>

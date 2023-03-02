@@ -1,1 +1,12 @@
 @use "../../styles/colors";
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.option {
+    text-align: center;
+}
