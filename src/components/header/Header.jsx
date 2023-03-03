@@ -12,7 +12,7 @@ const Header = () => {
           <Grid item xs={2}>
             <Logo />
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={5}>
             <div>
                 <TextField
                     className={styles.input}
@@ -27,7 +27,7 @@ const Header = () => {
                 />
             </div>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={5}>
             <div>
               <Button color="inherit" className={styles.btn}>Home</Button>
               <Button color="inherit" className={styles.btn}>Activity</Button>

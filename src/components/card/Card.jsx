@@ -8,15 +8,15 @@ import styles from "./Card.module.scss";
 import Countdown, {zeroPad} from 'react-countdown';
 
 export default function CardComponent ({ 
-  name = "Clock",
+  name = "",
   likes = 0,
-  mediaUrl = "/images/nft.jpg",
-  price = "~12.2",
-  currency = "ETH",
-  timeLeft = 6546460 ,
+  mediaUrl = "",
+  price = "",
+  currency = "",
+  timeLeft = 0 ,
   user = {
     avatar:{
-        url:"/images/avatar.png"
+        url:""
     },
         verified: true
     }, 
