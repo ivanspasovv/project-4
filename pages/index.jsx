@@ -15,18 +15,25 @@ import dataNfts from "../data/nfts.json";
 
 export default function Index() {
   const [featuredCards, setFeaturedCards] = useState([]);
+  
   useEffect(() => {
-      setFeaturedCards(dataFeatured);
+    const parsedData = dataFeatured.map((item, index) => {
+      if (index === 0) {
+        return { ...item, cols: 3, rows: 2 };
+      }
+      return { ...item, };
+    });
+    setFeaturedCards(parsedData);
   }, []);
 
   return (
     <>
       <Header />
-      <Featured />
-      <Trending data={dataTrending} />
+      <Featured items={featuredCards}/>
+      <Trending cards={dataTrending} owner={user}/>
       <TopCollectors data={dataUsers} />
       <How />
-      <Auctions data={dataNfts} />
+      <Auctions cards={dataNfts} />
       <Footer />
     </>
   );

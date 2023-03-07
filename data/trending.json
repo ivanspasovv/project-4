@@ -25,7 +25,7 @@
         "ext": ".jpg",
         "mime": "image/jpeg",
         "size": 1.49,
-        "url": "https://nft-auction.herokuapp.com/uploads/0xd8a833cd9ccca1fcbc81d81a88fcef03e5efd0f1_150e2878c2.jpg",
+        "url": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80.jpg",
         "previewUrl": null,
         "provider": "local",
         "provider_metadata": null,
@@ -42,7 +42,7 @@
     "created_at": "2021-10-22T08:29:09.573Z",
     "updated_at": "2021-10-22T08:29:22.206Z",
     "image": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
-    "mediaUrl": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
+    "mediaUrl": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80.jpg",
     "source": {
       "id": 734,
       "name": "0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe.jpg",
@@ -130,7 +130,7 @@
     "created_at": "2021-10-22T08:29:10.111Z",
     "updated_at": "2021-10-22T08:29:22.979Z",
     "image": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
-    "mediaUrl": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
+    "mediaUrl": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80.jpg",
     "source": {
       "id": 773,
       "name": "0xa5192c2be7bf2603bbbae09c340dfeac07275a7a.jpg",
@@ -229,7 +229,7 @@
     "created_at": "2021-10-22T08:29:16.373Z",
     "updated_at": "2021-10-22T08:29:23.202Z",
     "image": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
-    "mediaUrl": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
+    "mediaUrl": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80.jpg",
     "source": {
       "id": 656,
       "name": "0x989873c7d1d6a188eb6bfcc78adaec5cbd48cb09.jpg",
@@ -305,7 +305,7 @@
     "created_at": "2021-10-22T08:29:16.674Z",
     "updated_at": "2021-10-22T08:29:22.206Z",
     "image": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
-    "mediaUrl": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
+    "mediaUrl": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80.jpg",
     "source": {
       "id": 639,
       "name": "0x72abed3186b65b29e4da3faaa926e74d1f763cc5.jpg",

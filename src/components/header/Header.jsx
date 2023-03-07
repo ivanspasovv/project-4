@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div>
       <Container className={styles.container}>
-        <Grid container alignItems="center">
+        <Grid container alignItems="center" spacing={2}>
           <Grid item xs={2}>
             <Logo />
           </Grid>
