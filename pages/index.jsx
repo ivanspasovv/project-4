@@ -30,8 +30,8 @@ export default function Index() {
     <>
       <Header />
       <Featured items={featuredCards}/>
-      <Trending cards={dataTrending} owner={user}/>
-      <TopCollectors data={dataUsers} />
+      <Trending cards={dataTrending} />
+      <TopCollectors collectors={dataUsers} />
       <How />
       <Auctions cards={dataNfts} />
       <Footer />
