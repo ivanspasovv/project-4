@@ -6,8 +6,8 @@ export default function Footer() {
     return (
         <div>
             <Container maxWidth="lg" >
-                <Grid container spacing={0} justifyContent="space-between" alignItems="center">
-                    <Grid item xs={12} sm={2}>
+                <Grid container className={styles.container} justifyContent="space-between" alignItems="center">
+                    <Grid item xs={12} sm={4}>
                         <Logo type="muted" />
                     </Grid>
                     <Grid item xs={12} sm={4} className={styles.text}>

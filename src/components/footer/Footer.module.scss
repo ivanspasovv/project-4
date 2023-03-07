@@ -1,5 +1,9 @@
 @use "../../styles/colors";
 
+.container {
+    margin-top: 5rem;
+}
+
 .text {
     color: colors.$text_disabled;
 }

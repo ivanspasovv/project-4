@@ -26,14 +26,22 @@ export default function Index() {
     setFeaturedCards(parsedData);
   }, []);
 
+    const trendingCards = dataTrending.map((item) => {
+      return { ...item,  user: item.owner };
+    });
+
+    const liveCards = dataNfts.map((item) => {
+      return { ...item,  user: item.owner };
+    });
+
   return (
     <>
       <Header />
       <Featured items={featuredCards}/>
-      <Trending cards={dataTrending} />
+      <Trending cards={trendingCards} />
       <TopCollectors collectors={dataUsers} />
       <How />
-      <Auctions cards={dataNfts} />
+      <Auctions cards={liveCards} />
       <Footer />
     </>
   );
