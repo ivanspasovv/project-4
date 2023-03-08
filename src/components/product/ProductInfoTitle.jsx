@@ -7,7 +7,7 @@ export default function ProductInfoTitle ({ text, title = "My NFT Name"}) {
   return (
   <div className={styles['product-info-title']}>
     <Typography variant="h5" className={styles.title}>
-      {text}
+      <p>{text}</p>
     </Typography>
   </div>
   );
