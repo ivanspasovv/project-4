@@ -37,7 +37,7 @@ export default function Index() {
 
   return (
     <>
-      <ProductInfoTitle />
+      <ProductInfoTitle text="gjhfghfg"/>
       <Header />
       <Featured items={featuredCards}/>
       <Trending cards={trendingCards} />
