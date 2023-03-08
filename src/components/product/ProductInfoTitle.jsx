@@ -5,10 +5,10 @@ import styles from './ProductInfoTitle.module.scss';
 export default function ProductInfoTitle ({ text, title = "My NFT Name"}) {
   text = title
   return (
-  <div className={styles['product-info-title']}>
+  <Typography className={styles['product-info-title']}>
     <Typography variant="h5" className={styles.title}>
-      <p>{text}</p>
-    </Typography>
-  </div>
+        {text}
+      </Typography>
+  </Typography>
   );
 };
