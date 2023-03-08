@@ -37,7 +37,7 @@ export default function Index() {
 
   return (
     <>
-      <ProductInfoTitle text="My NFT Name" title={"word"}/>
+      <ProductInfoTitle/>
       <Header />
       <Featured items={featuredCards}/>
       <Trending cards={trendingCards} />
