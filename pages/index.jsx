@@ -7,7 +7,7 @@ import TopCollectors from "../src/components/collectors/TopCollectors";
 import How from "../src/components/how/How";
 import Auctions from "../src/components/auctions/Auctions";
 import Footer from "../src/components/footer/Footer";
-import ProductImage from "../src/components/product/ProductImage";
+import ProductInfoTitle  from "../src/components/product/ProductInfoTitle";
 
 import dataFeatured from "../data/featured.json";
 import dataTrending from "../data/trending.json";
@@ -37,7 +37,7 @@ export default function Index() {
 
   return (
     <>
-      <ProductImage />
+      <ProductInfoTitle text="My NFT Name" />
       <Header />
       <Featured items={featuredCards}/>
       <Trending cards={trendingCards} />
