@@ -39,9 +39,9 @@ export default function CardComponent ({
 
   return (
 
-    <Card className={styles.card}>
+    <Card className={styles.card} style={{ backgroundColor: isLive ? 'rgba(36, 242, 94, 0.1)' : '#181828' }}>
       <CardContent>
-        <Avatar url={user.avatar.url} verified={user.verified} className={styles.avatar} />
+        <Avatar size={30} url={user.avatar.url} verified={user.verified} className={styles.avatar} />
         <div className={styles.live}>
           {isLive && (
           <div className={styles.badge}>

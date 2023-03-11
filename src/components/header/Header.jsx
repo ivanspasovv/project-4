@@ -6,8 +6,8 @@ import styles from "./Header.module.scss";
 
 const Header = () => {
   return (
-    <div>
-      <Container className={styles.container}>
+    <div className={styles.container}>
+      <Container >
         <Grid container alignItems="center" spacing={2}>
           <Grid item xs={2}>
             <Logo />

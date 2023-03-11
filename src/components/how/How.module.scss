@@ -6,7 +6,7 @@
 }
 
 .how {
-    height: 100%;
+    height: 510px;
     padding: 0 2.25rem;
     align-items: center;
     max-width: 1200px;
@@ -26,8 +26,4 @@
 .btn {
     background-color: colors.$text_primary !important;
     color: colors.$primary_main !important;
-}
-
-.infoCard {
-    margin-top: -2rem;
 }

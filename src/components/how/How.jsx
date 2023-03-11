@@ -40,8 +40,8 @@ export default function How ({title = "", description = "", items = [], link = "
                 </Grid>
                 <Grid item xs={1.5} >
                 </Grid>
-                <Grid item xs={4.5} className={styles.infoCard}>
-                    <InfoCardSteps items={items} />
+                <Grid item xs={4.5} className={styles.infoCard} style={{marginTop: "-3rem"}}>
+                    <InfoCardSteps items={items}/>
                 </Grid>
             </Grid>
         </div>

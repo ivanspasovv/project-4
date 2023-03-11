@@ -36,7 +36,7 @@ export default function Index() {
     });
 
     const topCollectors = dataUsers.slice(0, 12).map((item) => {
-      return { ...item, };
+      return { ...item, avatar: item.avatar.url};
     });
 
   return (

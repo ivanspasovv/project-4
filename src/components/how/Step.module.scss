@@ -2,8 +2,10 @@
 
 .infoCard {
     background-color: colors.$background_paper;
+    overflow: hidden;
     border-radius: 1.8rem;
     box-sizing: border-box;
+    height: 170px;
 }
 
 .number {

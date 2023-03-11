@@ -1,11 +1,13 @@
 @use "../../styles/colors";
 
 .container {
-    margin-top: 2rem;
+    background: colors.$background_paper;
+    max-width: 100% !important;
+    margin-top: 0.5rem;
 }
 
 .input {
-    background: colors.$background_paper !important;
+    background: colors.$background_default;
     width: 100%;
     border-radius: 25px;
 }

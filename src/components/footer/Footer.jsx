@@ -4,9 +4,9 @@ import Logo from "../logo/Logo";
 
 export default function Footer() {
     return (
-        <div>
+        <div className={styles.container}>
             <Container maxWidth="lg" >
-                <Grid container className={styles.container} justifyContent="space-between" alignItems="center">
+                <Grid container justifyContent="space-between" alignItems="center">
                     <Grid item xs={12} sm={4}>
                         <Logo type="muted" />
                     </Grid>

@@ -1,6 +1,7 @@
 [
   {
     "id": 361,
+    "timeLeft": 2898498,
     "name": "Ergonomic Concrete Tuna",
     "price": 0.726,
     "owner": {
@@ -109,6 +110,7 @@
   },
   {
     "id": 362,
+    "timeLeft": 5451981,
     "name": "Handmade Plastic Fish",
     "price": 0.652,
     "owner": {
@@ -217,6 +219,7 @@
   },
   {
     "id": 363,
+    "timeLeft": 785787,
     "name": "Refined Metal Mouse",
     "price": 0.903,
     "owner": {
@@ -325,6 +328,7 @@
   },
   {
     "id": 363,
+    "timeLeft": 542478,
     "name": "Refined Metal Mouse",
     "price": 0.903,
     "owner": {
