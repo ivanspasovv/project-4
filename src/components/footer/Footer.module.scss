@@ -1,15 +1,21 @@
 @use "../../styles/colors";
 
 .container {
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .text {
     color: colors.$text_disabled;
 }
 
+.btnContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .buttons {
     font-weight: 400 !important;
     text-transform: none !important;
     font-size: 0.9rem !important;
+    padding: 0.3rem !important;
 }

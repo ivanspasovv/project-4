@@ -25,7 +25,7 @@ export default function TopCollectors ({ collectors = [] }) {
 
   return (
     <div>
-          <Container className={styles.dfgdfg}>
+          <Container  className={styles.container}>
               <div className={styles.title}>
                   <Typography variant="h2" >
                       TopCollectors
@@ -36,9 +36,9 @@ export default function TopCollectors ({ collectors = [] }) {
                   </Select>
               </div>
 
-              <Grid container>
+              <Grid container spacing={2}>
               {collectorChunks.map((chunk, index) => (
-                <Grid item xs={12} sm={6} md={3} key={index} className={styles.collectorContainer}>
+                <Grid item xs={12} sm={6} md={3} key={index}>
                     <CollectorColumn items={chunk} />
                 </Grid>
                 ))}

@@ -12,14 +12,14 @@ export default function Footer() {
                     </Grid>
                     <Grid item xs={12} sm={4} className={styles.text}>
                         <p>
-                            Some text describing the purpose of the footer
+                            Bum All Rights Reserved 2021
                         </p>
                     </Grid>
-                    <Grid item xs={12} sm={4} >
+                    <Grid item xs={12} sm={4} className={styles.btnContainer}>
                         <Button color="inherit" href="/privacy-policy" className={styles.buttons}>
                             Privacy Policy
                         </Button>
-                        <Button color="inherit" href="/cookie-policy"  className={styles.buttons}>
+                        <Button color="inherit" href="/cookie-policy" className={styles.buttons}>
                             Cookie Policy
                         </Button>
                     </Grid>

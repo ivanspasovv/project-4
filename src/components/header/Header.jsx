@@ -27,12 +27,10 @@ const Header = () => {
                 />
             </div>
           </Grid>
-          <Grid item xs={5}>
-            <div>
-              <Button color="inherit" className={styles.btn}>Home</Button>
-              <Button color="inherit" className={styles.btn}>Activity</Button>
-              <Button color="inherit" className={styles.btn}>Explore</Button>
-            </div>
+          <Grid item xs={5} className={styles.btnContainer} >
+              <Button color="inherit">Home</Button>
+              <Button color="inherit">Activity</Button>
+              <Button color="inherit" className={styles.active}>Explore</Button>
           </Grid>
         </Grid>
       </Container>

@@ -28,20 +28,24 @@ export default function Index() {
   }, []);
 
     const trendingCards = dataTrending.map((item) => {
-      return { ...item,  user: item.owner };
+      return { ...item, user: item.owner };
     });
 
     const liveCards = dataNfts.map((item) => {
-      return { ...item,  user: item.owner };
+      return { ...item, user: item.owner };
+    });
+
+    const topCollectors = dataUsers.slice(0, 12).map((item) => {
+      return { ...item, };
     });
 
   return (
     <>
-      <ProductInfoTitle text="gjhfghfg"/>
+      {/* <ProductInfoTitle text="gjhfghfg"/> */}
       <Header />
       <Featured items={featuredCards}/>
       <Trending cards={trendingCards} />
-      <TopCollectors collectors={dataUsers} />
+      <TopCollectors collectors={topCollectors} />
       <How />
       <Auctions cards={liveCards} />
       <Footer />

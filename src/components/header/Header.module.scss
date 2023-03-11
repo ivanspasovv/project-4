@@ -10,6 +10,11 @@
     border-radius: 25px;
 }
 
-.btn:hover {
+.btnContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.active {
     background: colors.$primary_main !important;
 }

@@ -1,16 +1,16 @@
 @use "../../styles/colors";
 
+.container {
+    padding: 1rem 0;
+}
+
 .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1rem 0 2rem;
 }
 
 .option {
     text-align: center;
-}
-
-.collectorContainer {
-    padding:0 ;
 }

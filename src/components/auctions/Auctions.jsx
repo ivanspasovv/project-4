@@ -16,7 +16,7 @@ export default function Auctions ({ cards = []}) {
 
   return (
     <div>
-    <Container sx={{ mt: 1 }}>
+    <Container className={styles.container}>
         <div className={styles.title}>
             <Typography variant="h2" >
                 Live Auctions

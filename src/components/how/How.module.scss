@@ -2,27 +2,32 @@
 
 .container {
     background-color: colors.$primary_main;
-    height: 84vh;
-    margin: 8vh 0;
-    padding: 2rem;
+    margin: 4rem 0;
 }
 
 .how {
     height: 100%;
+    padding: 0 2.25rem;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .info h1 {
-    font-size: 5rem;
+    font-size: 3.2rem;
     margin: 0;
+    font-weight: 900;
 }
 
 .info p {
-    font-size: 1.3rem;
     margin-bottom: 3rem;
 }
 
 .btn {
     background-color: colors.$text_primary !important;
     color: colors.$primary_main !important;
+}
+
+.infoCard {
+    margin-top: -2rem;
 }

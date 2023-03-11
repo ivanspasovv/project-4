@@ -10,7 +10,7 @@ export default function Featured({ items = [] }) {
   };
 
   return (
-    <Container>
+    <Container className={styles.container}>
       <ImageList cols={6} gap={10} className={styles.imageList}>
         {items.map((item, index) => (
           <ImageListItem

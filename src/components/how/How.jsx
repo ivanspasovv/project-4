@@ -5,27 +5,27 @@ import InfoCardSteps from "../how/Step";
 
 export default function How ({title = "", description = "", items = [], link = ""}) {
 
-    description = "rgrthrerthrfgdfgdflsdfldfnglkdfgnjsdflkgdfjlkgrytytjrthrththhefgfgf";
+    description = "Discover, collect, and sell extraordinary NFTs on the worlds's first & largest NFT marketplace= There are three things you'll need in place to open your account and start buying or selling NFTs on BUM";
     title = "HOW IT WORKS";
     items = [
         {  "number":"1",
-           "title":"Title 1",
-           "description":"rgrthrerthrfgdfgdflsdfldfnglkdfgnjsfghfghfgfghfgdgdfgdfgdfggdfgdfgdfgdflkgdfjlkgrytytj"
+           "title":"DIGITAL CURRENCY",
+           "description":"You can get ETH, the digital currency that fuels transactions on the Ethereum blockchain, from a digital currency exchange"
         },
         {   "number":"2",
-            "title":"Title 2",
-            "description":"rgrthrerthrfgdfgdflsdfldfnglkdfgnjsfghfghfgfghfgdgdfgdfgdfggdfgdfgdfgdflkgdfjlkgrytytj"
+            "title":"CRYPTO WALLET",
+            "description":"A crypto wallet, such as MetaMask, stores your ETH and processes transactions on the Ethereum blockchain."
          },
          {  "number":"3",
-            "title":"Title 3",
-            "description":"rgrthrerthrfgdfgdflsdfldfnglkdfgnjsfghfghfgfghfgdgdfgdfgdfggdfgdfgdfgdflkgdfjlkgrytytj"
+            "title":"BUM.",
+            "description":"Let's correct your wallet to BUM, edit your profile, and begin interacting in the space."
          },
      ],
     link = "https://google.com"
     return (
         <div className={styles.container}>
-            <Grid container className={styles.how}>
-                <Grid item xs={9} className={styles.info}>
+            <Grid container className={styles.how} >
+                <Grid item xs={6} className={styles.info}>
                     <h1>
                         {title}
                     </h1>
@@ -38,8 +38,10 @@ export default function How ({title = "", description = "", items = [], link = "
                         </Button>
                     </p>
                 </Grid>
-                <Grid item xs={3} >
-                    <InfoCardSteps items={items} className={styles.infoCard}/>
+                <Grid item xs={1.5} >
+                </Grid>
+                <Grid item xs={4.5} className={styles.infoCard}>
+                    <InfoCardSteps items={items} />
                 </Grid>
             </Grid>
         </div>
