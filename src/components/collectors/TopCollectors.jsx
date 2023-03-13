@@ -28,7 +28,7 @@ export default function TopCollectors ({ collectors = [] }) {
           <Container  className={styles.container}>
               <div className={styles.title}>
                   <Typography variant="h2" >
-                      TopCollectors
+                      Top Collectors
                   </Typography>
                   <Select value={sortBy} onChange={handleSortChange} className={styles.select}>
                       <option className={styles.option} value="price">Sort by Price</option>

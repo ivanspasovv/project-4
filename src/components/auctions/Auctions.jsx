@@ -19,7 +19,7 @@ export default function Auctions ({ cards = []}) {
     <Container className={styles.container}>
         <div className={styles.title}>
             <Typography variant="h2" >
-                Live Auctions
+            🔥 Live Auctions
             </Typography>
         <Select value={sortBy} onChange={handleSortChange} className={styles.select}>
             <option className={styles.option} value="price">Sort by Price</option>
